@@ -1,0 +1,24 @@
+{
+  "name": "public",
+  "version": "1.0.0",
+  "description": "The website for hightop design and development",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch assets/scss -o assets/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DomenicBeall/Hightop-Design-Website.git"
+  },
+  "author": "Domenic Beall and Kaidyn Phelan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DomenicBeall/Hightop-Design-Website/issues"
+  },
+  "homepage": "https://github.com/DomenicBeall/Hightop-Design-Website#readme"
+}

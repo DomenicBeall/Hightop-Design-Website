@@ -1,8 +1,8 @@
 // Import mixins
 @import 'angle-mixin.scss';
-
-// Variables
-$hightop-orange: #F37E44;
+@import 'header.scss';
+@import 'variables.scss';
+@import 'dropdown.scss';
 
 html {
     font-family: basic-sans, sans-serif;
@@ -25,12 +25,122 @@ body {
 
     text-align: center;
 
-    @include angle(after);
+    @include angle(after, true);
 
     z-index: -1;
+
+    color: $hightop-orange;
+
+    display: flex;
+    align-items: center;
 }
 
-.header {
-    position: fixed;
+.container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+    width: 75%;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-bottom: 2rem;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
     
+    margin-bottom: 3rem;
+}
+
+.btn {
+    font-family: basic-sans, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+
+    font-size: larger;
+
+    padding: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.btn-hollow {
+    background: transparent;
+    color: $hightop-orange;
+
+    border: $hightop-orange solid 0.3rem;
+    border-radius: 5px;
+}
+
+.btn-fill {
+    background: $hightop-orange;
+    color: white;
+
+    border: $hightop-orange solid 0.3rem;
+    border-radius: 5px;
+}
+
+.sect-story {
+    display: flex;
+    align-items: center;
+
+    min-height: 75vh;
+}
+
+.sect-wwd {
+    min-height: 50vh;
+
+    display: flex;
+    align-items: center;
+
+    background: white;
+
+    @include angle(before, false);
+    @include angle(after, true);
+}
+
+.subtitle {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+
+.content {
+    font-size: 1rem;
+}
+
+.white {
+    color: white;
+}
+
+@media (min-width: $breakpoint-tablet) {
+    .content {
+        font-size: 2rem;
+    }
+
+    .subtitle {
+        font-size: 3rem;
+    }
+
+    .hero-title {
+        font-size: 4rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 3rem;
+        
+        margin-bottom: 3rem;
+    }
+
+    .container {
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }

@@ -1,0 +1,49 @@
+@import 'variables.scss';
+
+.header {
+    position: fixed;
+    width: 100%;
+
+    opacity: 1;
+
+    background: white;
+}
+
+.header-logo {
+    width: 80%;
+}
+
+.header-hr {
+    border: none;
+    border-top: $hightop-orange 2.5px solid;
+    border-radius: 1rem;
+
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-parent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 2rem;
+}
+
+.header-child {
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (min-width: $breakpoint-tablet) {
+    .header-parent {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

@@ -1,0 +1,17 @@
+.btn-dropdown {
+    display: block;
+}
+
+.btn-dropdown-wide {
+    display: none;
+}
+
+@media (min-width: $breakpoint-tablet) {
+    .btn-dropdown {
+        display: none;
+    }
+
+    .btn-dropdown-wide {
+        display: block;
+    }
+} 

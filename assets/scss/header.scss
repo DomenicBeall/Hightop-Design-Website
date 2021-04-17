@@ -1,12 +1,16 @@
 @import 'variables.scss';
 
-.header {
+#header {
     position: fixed;
     width: 100%;
+
+    transition: width 0.2s ease-out;
 
     opacity: 1;
 
     background: white;
+
+    z-index: 2;
 }
 
 .header-logo {
@@ -37,11 +41,18 @@
 
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    
+    width: 100%;
 }
 
 @media (min-width: $breakpoint-tablet) {
+    .header-child {
+        width: initial;
+        justify-content: space-between;
+    }
+
     .header-parent {
         flex-direction: row;
         justify-content: space-between;

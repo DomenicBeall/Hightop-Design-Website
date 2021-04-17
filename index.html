@@ -12,23 +12,58 @@
     <!-- CSS Import -->
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/index.css">
+
+    <!-- Script Import -->
+    <script src="./assets/js/dropdown.js"></script>
+    <script src="./assets/js/header.js"></script>
 </head>
 <body>
     
     <!-- Header -->
-    <header class="header">
+    <header id="header">
         <div class="header-parent">
             <div class="header-child">
                 <img class="header-logo" src="./assets/img/HighTop Design.svg" />
-                <button class="btn-dropdown">X</button>
+                <div class="btn-dropdown compact" onclick="toggleDropdown(event)">
+                    <div class="dropdown-icon dropdown-icon-closed" style="height: 100%; width: 100%; display: block;">
+                        <div class="dropdown-line half-top"></div>
+                        <div class="dropdown-line"></div>
+                        <div class="dropdown-line half-bottom"></div>
+                    </div>
+                    <div class="dropdown-icon dropdown-icon-open" style="height: 100%; width: 100%; display: none;">
+                        <div class="dropdown-line crossed-1"></div>
+                        <div class="dropdown-line crossed-2"></div>
+                    </div>
+                </div>
             </div>
             <div class="header-child">
                 <button class="btn btn-fill">Get a quote</button>
-                <button class="btn-dropdown-wide">X</button>
+                <div class="btn-dropdown wide" onclick="toggleDropdown(event)">
+                    <div class="dropdown-icon dropdown-icon-closed" style="height: 100%; width: 100%; display: block;">
+                        <div class="dropdown-line half-top"></div>
+                        <div class="dropdown-line"></div>
+                        <div class="dropdown-line half-bottom"></div>
+                    </div>
+                    <div class="dropdown-icon dropdown-icon-open" style="height: 100%; width: 100%; display: none;">
+                        <div class="dropdown-line crossed-1"></div>
+                        <div class="dropdown-line crossed-2"></div>
+                    </div>
+                </div>
             </div>
         </div>
         <hr class="header-hr">
     </header>
+
+    <!-- Dropdown -->
+    <div class="dropdown-parent wide">
+        <ul class="dropdown-content">
+            <a href="./index.html"><li>Home</li></a>
+            <a href="./index.html"><li>What is a custom website?</li></a>
+            <a href="./index.html"><li>Our Services</li></a>
+            <a href="./index.html"><li>About Us</li></a>
+            <a href="./index.html"><li>Get a quote</li></a>
+        </ul>
+    </div>
 
     <!-- Hero section -->
     <div class="hero">
@@ -50,8 +85,33 @@
     <!-- What we do -->
     <div class="sect-wwd">
         <div class="container">
-            
+            <h1 class="subtitle">What we do...</h1>
+            <div class="wwd-container">
+                <div class="wwd-column">
+                    <p class="content">We specialise in creating custom websites that grab your eye and convert customers. Everything we create is designed to achieve your goals.</p>
+                </div>
+                <div class="wwd-column">
+                    <p class="content">We also provide supplementary services including maintenance, hosting, domain management, SEO and a range of branding services.</p>
+                </div>
+            </div>
+            <div class="wwd-container">
+                <div class="wwd-column">
+                    <!-- Add an icon here -->
+                </div>
+                <div class="wwd-column">
+                    <!-- Add an icon here -->
+                </div>
+            </div>
+            <div class="wwd-container">
+                <div class="wwd-column">
+                    <button class="btn btn-fill">Get a custom site</button>
+                </div>
+                <div class="wwd-column">
+                    <button class="btn btn-hollow">See our services</button>
+                </div>
+            </div>
         </div>
     </div>
+   
 </body>
 </html>

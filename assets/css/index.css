@@ -221,6 +221,12 @@ body {
   border: #f16520 solid 0.3rem;
   border-radius: 5px; }
 
+.btn-hollow-white {
+  background: transparent;
+  color: white;
+  border: white solid 0.3rem;
+  border-radius: 5px; }
+
 .btn-hollow:hover {
   background: #f16520;
   color: white; }
@@ -235,7 +241,7 @@ body {
   min-height: 75vh; }
 
 .sect-wwd {
-  min-height: 50vh;
+  min-height: 75vh;
   display: flex;
   align-items: center;
   background: white;
@@ -298,6 +304,54 @@ body {
   display: flex;
   flex-direction: column;
   width: 25%; }
+
+.sect-aboutus {
+  min-height: 75vh;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  align-items: center; }
+
+.sect-contact {
+  min-height: 75vh;
+  display: flex;
+  align-items: center;
+  background: white;
+  position: relative;
+  z-index: 1;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+  .sect-contact:before {
+    background: inherit;
+    content: '';
+    display: block;
+    height: 50%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    -webkit-backface-visibility: hidden; }
+  .sect-contact:before {
+    top: 0;
+    transform: skewY(-1.5deg);
+    transform-origin: 0 0; }
+  .sect-contact:after {
+    background: inherit;
+    content: '';
+    display: block;
+    height: 50%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    -webkit-backface-visibility: hidden; }
+  .sect-contact:after {
+    bottom: 0;
+    transform: skewY(1.5deg);
+    transform-origin: 0 100%; }
 
 @media (min-width: 768px) {
   .content {

@@ -1,15 +1,12 @@
-// Import mixins
+// Import variables and mixins
 @import 'angle-mixin.scss';
-@import 'header.scss';
 @import 'variables.scss';
-@import 'dropdown.scss';
 
 html {
     font-family: basic-sans, sans-serif;
     font-weight: 400;
     font-style: normal;
     max-width: 100vw;
-    overflow-x: hidden;
 }
 
 body {
@@ -19,13 +16,37 @@ body {
     background: linear-gradient(90deg, rgba(241,101,32,1) 0%, rgba(241,130,32,1) 100%);
 
     height: 100vh;
-    width: 100%;
+    max-width: 100vw;
 
     transition: width 0.2s ease-out;
 }
 
+#parallax {
+    position: fixed;
+
+    z-index: -1;
+    height: 200vh;
+    width: 100vw;
+
+    opacity: 0.05;
+
+    background-image: url("../img/background-tile.png");
+}
+
+.subtitle {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    color: $hightop-orange;
+}
+
+.text-content {
+    font-size: 1rem;
+    color: $hightop-orange;
+}
+
 .hero {
-    min-height: 150vh;
+    min-height: 135vh;
     background: white;
 
     text-align: center;
@@ -62,69 +83,11 @@ body {
     margin-bottom: 3rem;
 }
 
-.btn {
-    font-family: basic-sans, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-
-    font-size: larger;
-
-    padding: 1rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
-
-    transition: all 0.05s linear;
-}
-
-.btn:hover {
-    cursor: pointer;
-}
-
-.btn-hollow {
-    background: transparent;
-    color: $hightop-orange;
-
-    border: $hightop-orange solid 0.3rem;
-    border-radius: 5px;
-}
-
-.btn-fill {
-    background: $hightop-orange;
-    color: white;
-
-    border: $hightop-orange solid 0.3rem;
-    border-radius: 5px;
-}
-
-.btn-hollow-white {
-    background: transparent;
-    color: white;
-
-    border: white solid 0.3rem;
-    border-radius: 5px;
-}
-
-.btn-hollow-white:hover {
-    background: white;
-    color: $hightop-orange;
-
-    border: white solid 0.3rem;
-    border-radius: 5px;
-}
-
-.btn-hollow:hover {
-    background: $hightop-orange;
-    color: white;
-}
-
-.btn-fill:hover {
-    background: transparent;
-    color: $hightop-orange;
-}
-
 .sect-story {
     display: flex;
     align-items: center;
+
+    text-align: center;
 
     min-height: 75vh;
 }
@@ -144,18 +107,6 @@ body {
 
     padding-top: 2rem;
     padding-bottom: 2rem;
-}
-
-.subtitle {
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 3rem;
-    color: $hightop-orange;
-}
-
-.content {
-    font-size: 1rem;
-    color: $hightop-orange;
 }
 
 .white {
@@ -181,6 +132,9 @@ body {
     display: flex;
     text-align: left;
     align-items: center;
+    
+    justify-content: center;
+    text-align: center;
 }
 
 .sect-contact {
@@ -218,76 +172,22 @@ body {
     padding: 2rem;
 }
 
-footer {
-    min-height: 25vh;
-    text-align: center;
-    padding: 2rem;
-    padding-top: 4rem;  
-}
-
-.footer-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: column;
-    padding: 4rem;
-}
-
-.footer-col-img {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    width: 100%;
-}
-
 .shadow {
     -webkit-filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.4));
     filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.4));
 }
 
-.footer-col {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    width: 100%;
-    padding-bottom: 4rem;
-}
-
-.footer-text {
-    color: white;
-    font-size: 1.25rem;
-    padding: 0.25rem;
-}
-
-.footer-heading {
-    font-size: 1.75rem;
-    font-weight: 700;
-    padding-bottom: 1rem;
-}
-
-footer i {
-    font-size: 3rem;
-    padding: 0.75rem;
-}
-
-#parallax {
-    position: fixed;
-
-    z-index: -1;
-    height: 200vh;
-    width: 100vw;
-
-    opacity: 0.05;
-
-    background-image: url("../img/background-tile.png");
-}
-
-.shoe-large {
+.shoe-large-parent {
     display: none;
 }
 
-@media (min-width: $breakpoint-tablet) {
-    .shoe-large {
+.shoe-large-img {
+    position: relative;
+    top: -300px; 
+}
+
+@media (min-width: $breakpoint-tablet) { 
+    .shoe-large-parent {
         display: block;
         position: absolute;
         right: 0;
@@ -295,26 +195,17 @@ footer i {
         z-index: 2;
     }
 
-    .footer-content {
+    .wwd-container {
         display: flex;
-        align-items: center;
         flex-direction: row;
         justify-content: space-around;
-        padding: 4rem;
+        padding: 1rem;
     }
     
-    .footer-col-img {
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        width: 33%;
-    }
-    
-    .footer-col {
+    .wwd-column {
         display: flex;
         flex-direction: column;
-        text-align: center;
-        width: 33%;
+        width: 25%;
     }
     
     .contact-row {
@@ -324,13 +215,16 @@ footer i {
     
         padding: 3rem;
     }
-    
+
+}
+
+@media (min-width: $breakpoint-phone) {    
     .contact-col {
         display: flex;
         flex-direction: column;
     }
     
-    .content {
+    .text-content {
         font-size: 2rem;
     }
 
@@ -355,21 +249,22 @@ footer i {
         margin-right: auto;
     }
 
-    .wwd-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        padding: 1rem;
-    }
-    
-    .wwd-column {
-        display: flex;
-        flex-direction: column;
-        width: 25%;
-    }
-
     .hero {
         min-height: 100vh;
     }
+
+    .sect-story {
+        text-align: left;
+    }
     
+    .sect-aboutus {
+        min-height: 75vh;
+    
+        display: flex;
+        text-align: left;
+        align-items: center;
+        
+        justify-content: left;
+        text-align: left;
+    }
 }

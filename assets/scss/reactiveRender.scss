@@ -1,0 +1,20 @@
+// Import variables and mixins
+@import 'variables.scss';
+
+.compact {
+    display: block;
+}
+
+.wide {
+    display: none;
+}
+
+@media (min-width: $breakpoint-phone) {
+    .compact {
+        display: none;
+    }
+
+    .wide {
+        display: block;
+    }
+} 

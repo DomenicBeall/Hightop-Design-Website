@@ -12,6 +12,11 @@
     <!-- CSS Import -->
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/dropdown.css">
+    <link rel="stylesheet" href="./assets/css/reactiveRender.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/buttons.css">
 
     <!-- Script Import -->
     <script src="./assets/js/dropdown.js"></script>
@@ -41,7 +46,7 @@
                 </div>
             </div>
             <div class="header-child">
-                <button class="btn btn-fill">Get a quote</button>
+                <button class="btn btn-fill wide">Get a quote</button>
                 <div class="wide">
                     <div class="btn-dropdown" onclick="toggleDropdown(event)">
                         <div class="dropdown-icon dropdown-icon-closed" style="height: 100%; width: 100%;">
@@ -100,12 +105,13 @@
     <div class="sect-story">
         <div class="container">
             <h1 class="subtitle white">Let us tell your story...</h1>
-            <p class="content white">Hightop Design and Development was founded on the belief that every website presents an opportunity to create a unique and engaging experience for every user. At Hightop we focus on more than what looks good on the page, we dive deep into understanding our clients and work with them closely to create beautiful extensions of their brand.</p>
+            <p class="text-content white">Hightop Design and Development was founded on the belief that every website presents an opportunity to create a unique and engaging experience for every user. At Hightop we focus on more than what looks good on the page, we dive deep into understanding our clients and work with them closely to create beautiful extensions of their brand.</p>
         </div>
     </div>
 
-    <div class="shoe-large">
-        <img src="./assets/img/HighTop-Shoe-Icon.png" alt="Hightop shoe logo, in profile." style="transform: scale3d(-1.1, 1.1, 1); position: relative; top: -300px; left: 25px;" class="shadow">
+    <!-- Large shoe on side of screen -->
+    <div class="shoe-large-parent">
+        <img class="shadow shoe-large-img" src="./assets/img/HighTop-Shoe-Cut.png" alt="Hightop shoe logo, in profile.">
     </div>
 
     <!-- What we do -->
@@ -114,10 +120,10 @@
             <h1 class="subtitle">What we do...</h1>
             <div class="wwd-container">
                 <div class="wwd-column">
-                    <p class="content">We specialise in creating custom websites that grab your eye and convert customers. Everything we create is designed to achieve your goals.</p>
+                    <p class="text-content">We specialise in creating custom websites that grab your eye and convert customers. Everything we create is designed to achieve your goals.</p>
                 </div>
                 <div class="wwd-column">
-                    <p class="content">We also provide supplementary services including maintenance, hosting, domain management, SEO and a range of branding services.</p>
+                    <p class="text-content">We also provide supplementary services including maintenance, hosting, domain management, SEO and a range of branding services.</p>
                 </div>
             </div>
             <div class="wwd-container">
@@ -144,7 +150,7 @@
     <div class="sect-aboutus">
         <div class="container">
             <h1 class="subtitle white">About Us</h1>
-            <p class="content white">Hightop is a web design and development company operating out of Carlton, Melbourne. We service small businesses throughout Victoria and Australia wide.</p>
+            <p class="text-content white">Hightop is a web design and development company operating out of Carlton, Melbourne. We service small businesses throughout Victoria and Australia wide.</p>
             <button class="btn btn-hollow-white" style="margin-top: 3rem;">Learn More</button>
         </div>
     </div>
@@ -153,16 +159,16 @@
     <div class="sect-contact shadow">
         <div class="container">
             <h1 class="subtitle">Interested?</h1>
-            <p class="content">If you're sold, get a quote here. Otherwise feel free to get in contact if you have any inquiries. We can be contacted by phone or by email.</p>    
+            <p class="text-content">If you're sold, get a quote here. Otherwise feel free to get in contact if you have any inquiries. We can be contacted by phone or by email.</p>    
         
             <div class="contact-row">
                 <div class="contact-col">
                     <i class="fas fa-phone" style="font-size: 4rem;"></i>
-                    <p class="content">0412562643</p>
+                    <p class="text-content">0412562643</p>
                 </div>
                 <div class="contact-col">
                     <i class="fas fa-envelope"  style="font-size: 4rem;"></i>                        
-                    <p class="content">info@hightop-design.com</p>
+                    <p class="text-content">info@hightop-design.com</p>
                 </div>
             </div>
         </div>

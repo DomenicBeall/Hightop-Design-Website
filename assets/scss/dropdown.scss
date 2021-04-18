@@ -1,3 +1,4 @@
+// Import variables and mixins
 @import 'variables.scss';
 
 .btn-dropdown {
@@ -5,6 +6,8 @@
     width: 2.5rem;
 
     transition: all 0.1s linear;
+
+    padding-left: 2rem;
 }
 
 .dropdown-line {
@@ -64,14 +67,6 @@
     .half-bottom {
         width: 100%;
     }
-}
-
-.compact {
-    display: block;
-}
-
-.wide {
-    display: none;
 }
 
 .dropdown-icon {
@@ -182,13 +177,5 @@ a, a:hover, a:visited, a:active {
     .dropdown-icon-closed {
         transform: rotateZ(45deg);
         transition: all 0.1s linear;
-    }
-
-    .compact {
-        display: none;
-    }
-
-    .wide {
-        display: block;
     }
 } 

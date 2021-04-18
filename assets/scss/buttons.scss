@@ -1,0 +1,65 @@
+// Import variables and mixins
+@import 'variables.scss';
+
+.btn {
+    font-family: basic-sans, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+
+    font-size: larger;
+
+    padding: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+
+    transition: all 0.05s linear;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn-hollow {
+    background: transparent;
+    color: $hightop-orange;
+
+    border: $hightop-orange solid 0.3rem;
+    border-radius: 5px;
+}
+
+.btn-hollow:hover {
+    background: $hightop-orange;
+    color: white;
+}
+
+.btn-fill {
+    background: $hightop-orange;
+    color: white;
+
+    border: $hightop-orange solid 0.3rem;
+    border-radius: 5px;
+}
+
+.btn-fill:hover {
+    background: transparent;
+    color: $hightop-orange;
+}
+
+.btn-hollow-white {
+    background: transparent;
+    color: white;
+
+    border: white solid 0.3rem;
+    border-radius: 5px;
+}
+
+.btn-hollow-white:hover {
+    background: white;
+    color: $hightop-orange;
+
+    border: white solid 0.3rem;
+    border-radius: 5px;
+}
+
+
+

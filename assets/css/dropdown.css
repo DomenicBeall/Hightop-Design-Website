@@ -1,7 +1,8 @@
 .btn-dropdown {
   height: 2.5rem;
   width: 2.5rem;
-  transition: all 0.1s linear; }
+  transition: all 0.1s linear;
+  padding-left: 2rem; }
 
 .dropdown-line {
   width: 100%;
@@ -43,12 +44,6 @@
     width: 100%; }
   .btn-dropdown:hover .half-bottom {
     width: 100%; }
-
-.compact {
-  display: block; }
-
-.wide {
-  display: none; }
 
 .dropdown-icon {
   position: relative; }
@@ -109,7 +104,7 @@ a, a:hover, a:visited, a:active {
   transition: all 0.2s ease-out;
   box-shadow: 5px 0 15px black; }
 
-@media (min-width: 768px) {
+@media (min-width: 1100px) {
   .half-top {
     width: 60%;
     transform: translateY(0);
@@ -125,8 +120,4 @@ a, a:hover, a:visited, a:active {
     margin-left: 1rem; }
   .dropdown-icon-closed {
     transform: rotateZ(45deg);
-    transition: all 0.1s linear; }
-  .compact {
-    display: none; }
-  .wide {
-    display: block; } }
+    transition: all 0.1s linear; } }

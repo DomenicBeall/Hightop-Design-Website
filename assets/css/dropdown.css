@@ -12,27 +12,33 @@
   transition: all 0.1s linear; }
 
 .half-top {
-  width: 60%;
+  width: 100%;
   transform: translateY(0);
   margin-left: auto;
   margin-right: auto; }
 
 .half-bottom {
-  width: 60%;
+  width: 100%;
   transform: translateY(200%);
   margin-left: auto;
   margin-right: auto; }
 
 .dropdown-icon-open {
   transition: all 0.1s linear;
-  transform: rotateZ(45deg); }
+  width: 10%;
+  height: 10%;
+  position: absolute;
+  top: 1rem;
+  right: 1rem; }
+
+.dropdown-icon-open:hover {
+  transform: scale(1.2);
+  cursor: pointer; }
 
 .btn-dropdown:hover {
   cursor: pointer; }
   .btn-dropdown:hover .dropdown-icon-closed {
     transform: rotateZ(0deg); }
-  .btn-dropdown:hover .dropdown-icon-open {
-    transform: rotateZ(45deg) scale(1.2); }
   .btn-dropdown:hover .half-top {
     width: 100%; }
   .btn-dropdown:hover .half-bottom {
@@ -48,14 +54,17 @@
   position: relative; }
 
 .crossed-1 {
+  height: 10%;
   position: absolute;
-  transform: translateY(200%) rotateZ(90deg); }
+  transform: translateY(200%) rotateZ(-45deg); }
 
 .crossed-2 {
+  height: 10%;
   position: absolute;
-  transform: translateY(200%); }
+  transform: translateY(200%) rotateZ(45deg); }
 
 .dropdown-content {
+  margin-top: 6rem;
   width: 90%;
   margin-left: auto;
   margin-right: auto; }
@@ -76,7 +85,41 @@ a, a:hover, a:visited, a:active {
   font-weight: 700;
   transform: scale(1.025); }
 
+.dropdown-parent-wide {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 3;
+  width: 0%;
+  height: 100vh;
+  background-color: white;
+  transition: all 0.2s ease-out;
+  box-shadow: 5px 0 15px black;
+  overflow: hidden; }
+
+.dropdown-parent-compact {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 3;
+  width: 100vw;
+  height: 0%;
+  overflow: hidden;
+  background-color: white;
+  transition: all 0.2s ease-out;
+  box-shadow: 5px 0 15px black; }
+
 @media (min-width: 768px) {
+  .half-top {
+    width: 60%;
+    transform: translateY(0);
+    margin-left: auto;
+    margin-right: auto; }
+  .half-bottom {
+    width: 60%;
+    transform: translateY(200%);
+    margin-left: auto;
+    margin-right: auto; }
   .btn-dropdown {
     padding: 1rem;
     margin-left: 1rem; }

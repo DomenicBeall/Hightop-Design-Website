@@ -8,13 +8,9 @@ document.addEventListener('scroll', function (event) {
 
     var scrollDist = st - lastScrollTop;
 
-    console.log("Scroll Distance: " + scrollDist);
-
     var newTop = header.getBoundingClientRect().top - scrollDist;
 
-    console.log("New Top: " + newTop);
-
-    header.style.top = clamp(newTop, -200, 0) + "px";
+    header.style.top = clamp(newTop, -400, 0) + "px";
 
     lastScrollTop = st <= 0 ? 0 : st;
 

@@ -8,6 +8,8 @@ html {
     font-family: basic-sans, sans-serif;
     font-weight: 400;
     font-style: normal;
+    max-width: 100vw;
+    overflow-x: hidden;
 }
 
 body {
@@ -22,24 +24,8 @@ body {
     transition: width 0.2s ease-out;
 }
 
-.dropdown-parent {
-    position: fixed;
-    right: 0;
-    top: 0;
-
-    z-index: 2;
-
-    width: 0%;
-    height: 100vh;
-    background-color: white;
-
-    transition: all 0.2s ease-out;
-
-    box-shadow: 5px 0 15px rgb(0, 0, 0);
-}
-
 .hero {
-    min-height: 100vh;
+    min-height: 150vh;
     background: white;
 
     text-align: center;
@@ -66,6 +52,7 @@ body {
     margin-left: auto;
     margin-right: auto;
 
+    margin-top: 25%;
     margin-bottom: 2rem;
 }
 
@@ -112,6 +99,14 @@ body {
 .btn-hollow-white {
     background: transparent;
     color: white;
+
+    border: white solid 0.3rem;
+    border-radius: 5px;
+}
+
+.btn-hollow-white:hover {
+    background: white;
+    color: $hightop-orange;
 
     border: white solid 0.3rem;
     border-radius: 5px;
@@ -169,22 +164,21 @@ body {
 
 .wwd-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
-    padding: 1rem;
 }
 
 .wwd-column {
     display: flex;
     flex-direction: column;
-    width: 25%;
+    width: 100%;
+    padding-bottom: 2rem;
 }
 
 .sect-aboutus {
     min-height: 75vh;
 
     display: flex;
-    align-items: center;
     text-align: left;
     align-items: center;
 }
@@ -206,7 +200,136 @@ body {
     padding-bottom: 2rem;
 }
 
+.contact-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    padding: 3rem;
+}
+
+.contact-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-col i {
+    color: $hightop-orange;
+    padding: 2rem;
+}
+
+footer {
+    min-height: 25vh;
+    text-align: center;
+    padding: 2rem;
+    padding-top: 4rem;  
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 4rem;
+}
+
+.footer-col-img {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.shadow {
+    -webkit-filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.4));
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.4));
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 4rem;
+}
+
+.footer-text {
+    color: white;
+    font-size: 1.25rem;
+    padding: 0.25rem;
+}
+
+.footer-heading {
+    font-size: 1.75rem;
+    font-weight: 700;
+    padding-bottom: 1rem;
+}
+
+footer i {
+    font-size: 3rem;
+    padding: 0.75rem;
+}
+
+#parallax {
+    position: fixed;
+
+    z-index: -1;
+    height: 200vh;
+    width: 100vw;
+
+    opacity: 0.05;
+
+    background-image: url("../img/background-tile.png");
+}
+
+.shoe-large {
+    display: none;
+}
+
 @media (min-width: $breakpoint-tablet) {
+    .shoe-large {
+        display: block;
+        position: absolute;
+        right: 0;
+        overflow: visible; 
+        z-index: 2;
+    }
+
+    .footer-content {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 4rem;
+    }
+    
+    .footer-col-img {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        width: 33%;
+    }
+    
+    .footer-col {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 33%;
+    }
+    
+    .contact-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    
+        padding: 3rem;
+    }
+    
+    .contact-col {
+        display: flex;
+        flex-direction: column;
+    }
+    
     .content {
         font-size: 2rem;
     }
@@ -217,6 +340,7 @@ body {
 
     .hero-title {
         font-size: 4rem;
+        margin-top: 10%;
     }
     
     .hero-subtitle {
@@ -230,4 +354,22 @@ body {
         margin-left: auto;
         margin-right: auto;
     }
+
+    .wwd-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 1rem;
+    }
+    
+    .wwd-column {
+        display: flex;
+        flex-direction: column;
+        width: 25%;
+    }
+
+    .hero {
+        min-height: 100vh;
+    }
+    
 }

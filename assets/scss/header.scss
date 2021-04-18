@@ -10,7 +10,7 @@
 
     background: white;
 
-    z-index: 2;
+    z-index: 3;
 }
 
 .header-logo {
@@ -41,20 +41,31 @@
 
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     
     width: 100%;
+
+    padding: 1rem;
 }
 
 @media (min-width: $breakpoint-tablet) {
     .header-child {
         width: initial;
         justify-content: space-between;
+        padding: 0;
     }
 
     .header-parent {
         flex-direction: row;
         justify-content: space-between;
     }
+}
+
+
+@media (max-width: $breakpoint-tablet) {
+    #header {
+        width: 100% !important;
+    }
+    
 }

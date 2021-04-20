@@ -223,7 +223,10 @@ body {
   .wwd-column {
     display: flex;
     flex-direction: column;
-    width: 25%; }
+    width: 25%;
+    height: fit-content; }
+  .wwd-icon {
+    height: 7rem; }
   .contact-row {
     display: flex;
     flex-direction: row;

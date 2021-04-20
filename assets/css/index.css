@@ -208,6 +208,13 @@ body {
   position: relative;
   top: -300px; }
 
+.wwd-icon-large {
+  height: 7rem; }
+
+.wwd-icon-compact {
+  height: 5rem;
+  padding: 2rem; }
+
 @media (min-width: 1100px) {
   .shoe-large-parent {
     display: block;
@@ -225,8 +232,6 @@ body {
     flex-direction: column;
     width: 25%;
     height: fit-content; }
-  .wwd-icon {
-    height: 7rem; }
   .contact-row {
     display: flex;
     flex-direction: row;

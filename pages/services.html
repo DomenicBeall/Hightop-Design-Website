@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>About Us</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../assets/img/favicon.png">
+
+    <!-- Typekit -->
+    <link rel="stylesheet" href="https://use.typekit.net/dyx2bub.css">
+
+    <!-- CSS Import -->
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/services.css">
+    <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="stylesheet" href="../assets/css/dropdown.css">
+    <link rel="stylesheet" href="../assets/css/reactiveRender.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
+    <link rel="stylesheet" href="../assets/css/buttons.css">
+    
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Script Import -->
+    <script src="../assets/js/dropdown.js"></script>
+    <script src="../assets/js/header.js"></script>
+    <script src="../assets/js/parallax.js"></script>
+    <script src="../assets/js/services.js"></script>
+    
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/5c8c766aa1.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    
+    <div id="parallax"></div>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="header-parent">
+            <div class="header-child">
+                <img class="header-logo" src="../assets/img/HighTop Design.svg" />
+                <div class="compact">
+                    <div class="btn-dropdown" onclick="toggleDropdown(event)">
+                        <div class="dropdown-icon dropdown-icon-closed" style="height: 100%; width: 100%;">
+                            <div class="dropdown-line half-top"></div>
+                            <div class="dropdown-line"></div>
+                            <div class="dropdown-line half-bottom"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-child">
+                <button class="btn btn-fill wide">Get a quote</button>
+                <div class="wide">
+                    <div class="btn-dropdown" onclick="toggleDropdown(event)">
+                        <div class="dropdown-icon dropdown-icon-closed" style="height: 100%; width: 100%;">
+                            <div class="dropdown-line half-top"></div>
+                            <div class="dropdown-line"></div>
+                            <div class="dropdown-line half-bottom"></div>
+                        </div>
+                    </div>   
+                </div>
+                
+            </div>
+        </div>
+        <hr class="header-hr">
+    </header>
+
+    <!-- Dropdown -->
+    <div class="dropdown-parent-wide wide">
+        <div class="dropdown-icon-open" onclick="toggleDropdown(event)">
+            <div class="dropdown-line crossed-1"></div>
+            <div class="dropdown-line crossed-2"></div>
+        </div>
+        <ul class="dropdown-content">
+            <a href="../index.html"><li>Home</li></a>
+            <a href="./custom-sites.html"><li>What is a custom website?</li></a>
+            <a href="./index.html"><li>Our Services</li></a>
+            <a href="./about.html"><li>About Us</li></a>
+            <a href="./index.html"><li>Get a quote</li></a>
+        </ul>
+    </div>
+
+    <!-- Dropdown Mobile -->
+    <div class="dropdown-parent-compact compact">
+        <div class="dropdown-icon-open" onclick="toggleDropdown(event)">
+            <div class="dropdown-line crossed-1"></div>
+            <div class="dropdown-line crossed-2"></div>
+        </div>
+        <ul class="dropdown-content">
+            <a href="../index.html"><li>Home</li></a>
+            <a href="./custom-sites.html"><li>What is a custom website?</li></a>
+            <a href="./index.html"><li>Our Services</li></a>
+            <a href="./about.html"><li>About Us</li></a>
+            <a href="./index.html"><li>Get a quote</li></a>
+        </ul>
+    </div>
+
+    <!-- Hero -->
+    <div class="hero">
+        <div class="container">
+            <div class="hero-title">Our services</div>
+            <div class="hero-subtitle">We specialise in creating custom websites that grab your eye and convert customers. We also provide supplementary services including maintenance, hosting, domain management, SEO and a range of branding services.</div>
+        </div>
+    </div>
+
+    <div class="service-list">
+        <!-- Custom Website Development -->
+        <div class="service-item">
+            <div class="service-item-content">
+                <div class="subtitle white">Custom Website Development</div>
+            </div>
+            <div class="service-item-content-hidden">
+                <div>
+                    <div class="subtitle white" style="margin-bottom:1rem;">Custom Website Development</div>
+                    <div style="width: 80%;">
+                        <div class="text-content white"> A Custom website is exactly that Custom, unlike a template a custom website is created with your business and users in mind the whole time, every part of the site will be designed specifically for your business from the looks, feel, interactivity to bring your passion to life for your customers.</div>
+                    </div>
+                </div>
+                <div class="service-icon-div">
+                    <img src="../assets/img/hightop-website-icons/white icons/icon-web-dev.svg" alt="" height="100px">
+                </div>
+            </div>
+        </div>
+        
+        <!-- Ongoing Maintenance -->
+        <div class="service-item solid">
+            <div class="service-item-content">
+                <div class="subtitle">Ongoing Maintenance</div>
+            </div>
+            <div class="service-item-content-hidden">
+                <div>
+                    <div class="subtitle" style="margin-bottom:1rem;">Ongoing Maintenance</div>
+                    <div style="width: 80%;">
+                        <div class="text-content">All of our sites come with guaranteed ongoing maintenance. You can rest assured that if you’re a restaurant with a new menu or a mechanic who wants to change their opening hours, we’ll be more than happy to make the site reflect that.</div>
+                    </div>
+                </div>
+                <div class="service-icon-div">
+                    <img src="../assets/img/hightop-website-icons/orange icons/icon-ongoing-service-orange.svg" alt="" height="100px">
+                </div>
+            </div>
+        </div>
+
+        <!-- SEO -->
+        <div class="service-item">
+            <div class="service-item-content">
+                <div class="subtitle white">SEO</div>
+            </div>
+            <div class="service-item-content-hidden">
+                <div>
+                    <div class="subtitle white" style="margin-bottom:1rem;">SEO</div>
+                    <div style="width: 80%;">
+                        <div class="text-content white">All of our sites are designed with Search Engine indexing in mind. We ensure everything from the structure of the site to the copywriting is optimised to get you that #1 rating on Google.</div>
+                    </div>
+                </div>
+                <div class="service-icon-div">
+                    <img src="../assets/img/hightop-website-icons/white icons/icon-seo.svg" alt="" height="100px">
+                </div>
+            </div>
+        </div>
+
+        <!-- Domain Management -->
+        <div class="service-item solid">
+            <div class="service-item-content">
+                <div class="subtitle">Domain Management</div>
+            </div>
+            <div class="service-item-content-hidden">
+                <div>
+                    <div class="subtitle" style="margin-bottom:1rem;">Domain Management</div>
+                    <div style="width: 80%;">
+                        <div class="text-content">We handle the purchase and management of your domain, including consultation to ensure you get one that represents your business well, whilst also being short, snappy and easy to remember, as all good domains should be.</div>
+                    </div>
+                </div>
+                <div class="service-icon-div">
+                    <img src="../assets/img/hightop-website-icons/orange icons/icon-domain-orange.svg" alt="" height="100px">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <p class="footer-heading white">Navigate</p>
+                <p class="footer-text">About Us</p>
+                <p class="footer-text">Custom Sites</p>
+                <p class="footer-text">Our Services</p>
+                <p class="footer-text">Get a quote</p>
+                <p class="footer-text">Contact Us</p>
+            </div>
+            <div class="footer-col">
+                <p class="footer-heading white">Follow Us</p>
+                <div>
+                    <i class="fab fa-facebook white"></i>
+                    <i class="fab fa-instagram white"></i>
+                </div>
+            </div>
+            <div class="footer-col-img">
+                <img class="shadow" src="../assets/img/HighTop-Shoe-Icon.png" alt="A hightop shoe, in profile." style="width: 40%;">
+            </div>
+        </div>
+        <p class="white">Privacy Policy  -  Sitemap</p>
+        <p class="white">© Hightop Design and Development, 2021</p>
+    </footer>
+
+</body>
+</html>

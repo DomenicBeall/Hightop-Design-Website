@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>About Us</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../assets/img/favicon.png">
+
+    <!-- Typekit -->
+    <link rel="stylesheet" href="https://use.typekit.net/dyx2bub.css">
+
+    <!-- CSS Import -->
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/about.css">
+    <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="stylesheet" href="../assets/css/dropdown.css">
+    <link rel="stylesheet" href="../assets/css/reactiveRender.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
+    <link rel="stylesheet" href="../assets/css/buttons.css">
+    
+    <!-- Script Import -->
+    <script src="../assets/js/dropdown.js"></script>
+    <script src="../assets/js/header.js"></script>
+    <script src="../assets/js/parallax.js"></script>
+    
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/5c8c766aa1.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    
+    <div id="parallax"></div>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="header-parent">
+            <div class="header-child">
+                <img class="header-logo" src="../assets/img/HighTop Design.svg" />
+                <div class="compact">
+                    <div class="btn-dropdown" onclick="toggleDropdown(event)">
+                        <div class="dropdown-icon dropdown-icon-closed" style="height: 100%; width: 100%;">
+                            <div class="dropdown-line half-top"></div>
+                            <div class="dropdown-line"></div>
+                            <div class="dropdown-line half-bottom"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-child">
+                <button class="btn btn-fill wide">Get a quote</button>
+                <div class="wide">
+                    <div class="btn-dropdown" onclick="toggleDropdown(event)">
+                        <div class="dropdown-icon dropdown-icon-closed" style="height: 100%; width: 100%;">
+                            <div class="dropdown-line half-top"></div>
+                            <div class="dropdown-line"></div>
+                            <div class="dropdown-line half-bottom"></div>
+                        </div>
+                    </div>   
+                </div>
+                
+            </div>
+        </div>
+        <hr class="header-hr">
+    </header>
+
+    <!-- Dropdown -->
+    <div class="dropdown-parent-wide wide">
+        <div class="dropdown-icon-open" onclick="toggleDropdown(event)">
+            <div class="dropdown-line crossed-1"></div>
+            <div class="dropdown-line crossed-2"></div>
+        </div>
+        <ul class="dropdown-content">
+            <a href="../index.html"><li>Home</li></a>
+            <a href="./custom-sites.html"><li>What is a custom website?</li></a>
+            <a href="./index.html"><li>Our Services</li></a>
+            <a href="./about.html"><li>About Us</li></a>
+            <a href="./index.html"><li>Get a quote</li></a>
+        </ul>
+    </div>
+
+    <!-- Dropdown Mobile -->
+    <div class="dropdown-parent-compact compact">
+        <div class="dropdown-icon-open" onclick="toggleDropdown(event)">
+            <div class="dropdown-line crossed-1"></div>
+            <div class="dropdown-line crossed-2"></div>
+        </div>
+        <ul class="dropdown-content">
+            <a href="../index.html"><li>Home</li></a>
+            <a href="./custom-sites.html"><li>What is a custom website?</li></a>
+            <a href="./index.html"><li>Our Services</li></a>
+            <a href="./about.html"><li>About Us</li></a>
+            <a href="./index.html"><li>Get a quote</li></a>
+        </ul>
+    </div>
+
+    <!-- Hero -->
+    <div class="hero shadow">
+        <div class="container">
+            <div class="hero-title">About Us</div>
+            <div class="hero-subtitle">Want to know about us, you're in the right place.</div>
+        </div>
+    </div>
+
+    <!-- Our Mission -->
+    <div class="mission">
+        <div class="container">
+            <div class="subtitle white">Our Mission</div>
+            <div class="text-content white">Our mission is to help businesses small and large convey their passion for what they do with beautifully designed custom websites and digital media, because we love what we do and we’ll ensure you love it too.</div>
+        </div>
+    </div>
+
+    <!-- Our Story -->
+    <div class="story shadow">
+        <div class="container">
+            <div class="subtitle">Our Story</div>
+            <div class="text-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis iaculis ligula quis massa auctor commodo. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras id purus sem. Etiam ut tempus massa. Fusce urna ante, gravida sed sodales hendrerit, porta non dui. Phasellus tempor sapien vel tincidunt tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id risus aliquam, egestas sem a, venenatis diam. Donec auctor dapibus elit, nec porta leo rhoncus vitae. Morbi turpis dolor, sollicitudin ut metus et, vehicula malesuada ex. Quisque vulputate, lectus et faucibus tincidunt, ligula eros dapibus lacus, sed iaculis eros nisi at nibh.</div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <p class="footer-heading white">Navigate</p>
+                <p class="footer-text">About Us</p>
+                <p class="footer-text">Custom Sites</p>
+                <p class="footer-text">Our Services</p>
+                <p class="footer-text">Get a quote</p>
+                <p class="footer-text">Contact Us</p>
+            </div>
+            <div class="footer-col">
+                <p class="footer-heading white">Follow Us</p>
+                <div>
+                    <i class="fab fa-facebook white"></i>
+                    <i class="fab fa-instagram white"></i>
+                </div>
+            </div>
+            <div class="footer-col-img">
+                <img class="shadow" src="../assets/img/HighTop-Shoe-Icon.png" alt="A hightop shoe, in profile." style="width: 40%;">
+            </div>
+        </div>
+        <p class="white">Privacy Policy  -  Sitemap</p>
+        <p class="white">© Hightop Design and Development, 2021</p>
+    </footer>
+
+</body>
+</html>

@@ -46,6 +46,12 @@ footer {
 footer i {
     font-size: 3rem;
     padding: 0.75rem;
+    transition: all 0.1s linear;
+}
+
+footer i:hover {
+    cursor: pointer;
+    transform: scale(1.2);
 }
 
 @media (min-width: $breakpoint-phone) {

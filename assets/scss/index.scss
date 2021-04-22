@@ -195,6 +195,90 @@ body {
     padding: 2rem;
 }
 
+.form {
+    min-height: 40vh;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+.input-row {
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+
+    justify-content: left;
+}
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    height: 3rem;
+
+    border: 2px white solid;
+    background-color: $hightop-orange;
+
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    font-size: 1.5rem;
+
+    font-family: basic-sans;
+    color: white;
+
+    margin-right: 1rem;
+    border-radius: 5px;
+
+}
+
+textarea {
+    border: 2px white solid;
+    background-color: $hightop-orange;
+
+    padding-right: 1rem;
+    padding-left: 1rem;
+
+    font-size: 1rem;
+
+    font-family: basic-sans;
+    color: white;
+
+    border-radius: 5px;
+}
+
+label {
+    color: white;
+    margin-top: 1rem;
+    padding-bottom: 0.25rem;
+}
+
+select {
+    height: 3rem;
+
+    width: 50%;
+
+    border: 2px white solid;
+    background-color: $hightop-orange;
+
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    font-size: 2rem;
+
+    font-family: basic-sans;
+    color: white;
+
+    margin-right: 1rem;
+    border-radius: 5px;
+}
+
+::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
 @media (min-width: $breakpoint-tablet) { 
     .shoe-large-parent {
         display: block;

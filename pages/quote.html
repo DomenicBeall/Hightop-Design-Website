@@ -21,7 +21,11 @@
     <link rel="stylesheet" href="../assets/css/footer.css">
     <link rel="stylesheet" href="../assets/css/buttons.css">
 
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <!-- Script Import -->
+    <script src="../assets/js/quote.js"></script>
     <script src="../assets/js/dropdown.js"></script>
     <script src="../assets/js/header.js"></script>
     <script src="../assets/js/parallax.js"></script>
@@ -76,7 +80,7 @@
             <a href="./custom-sites.html"><li>What is a custom website?</li></a>
             <a href="./services.html"><li>Our Services</li></a>
             <a href="./about.html"><li>About Us</li></a>
-            <a href="/"><li>Get a quote</li></a>
+            <a href="./quote.html"><li>Get a quote</li></a>
         </ul>
     </div>
 
@@ -87,11 +91,11 @@
             <div class="dropdown-line crossed-2"></div>
         </div>
         <ul class="dropdown-content">
-            <a href="./index.html"><li>Home</li></a>
-            <a href="./pages/custom-sites.html"><li>What is a custom website?</li></a>
+            <a href="../index.html"><li>Home</li></a>
+            <a href="./custom-sites.html"><li>What is a custom website?</li></a>
             <a href="./index.html"><li>Our Services</li></a>
-            <a href="./pages/about.html"><li>About Us</li></a>
-            <a href="./index.html"><li>Get a quote</li></a>
+            <a href="./about.html"><li>About Us</li></a>
+            <a href="./quote.html"><li>Get a quote</li></a>
         </ul>
     </div>
 
@@ -161,10 +165,11 @@
                 </select>
             </div>
 
-            <button class="btn btn-hollow-white" style="margin-left: auto; margin-right: auto; width: 20%; margin-top: 10vh;">Submit</button>
+            <button id="btn-quote-submit" class="btn btn-hollow-white" style="margin-left: auto; margin-right: auto; width: 20%; margin-top: 10vh;">Submit</button>
+            <h1 id="confirm-message" class="text-content white" style="margin-top: 10vh;"></h1>
         </div>
     </div>
-   
+
     <!-- Contact Us -->
     <div class="sect-contact shadow">
         <div class="container">

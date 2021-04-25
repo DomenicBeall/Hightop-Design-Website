@@ -12,7 +12,12 @@
     padding-left: 3rem;
     padding-right: 3rem;
 
+    margin-left: auto;
+    margin-right: auto;
+
     transition: all 0.05s linear;
+
+    max-width: 10rem;
 }
 
 .btn:hover {

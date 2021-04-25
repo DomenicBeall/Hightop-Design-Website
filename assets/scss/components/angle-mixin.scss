@@ -78,3 +78,19 @@
       }
     }
   }
+
+.angle-top-up {
+  @include angle(before, true);
+}
+
+.angle-top-down {
+  @include angle(before, false);
+}
+
+.angle-bottom-up {
+  @include angle(after, false);
+}
+
+.angle-bottom-down {
+  @include angle(after, true);
+}

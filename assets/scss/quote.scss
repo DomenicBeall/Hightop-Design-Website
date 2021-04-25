@@ -9,25 +9,11 @@
 @import './components/dropdown.scss';
 @import './components/hero.scss';
 @import './components/section.scss';
-
-.wwd-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 1rem;
-}
-
-.wwd-column {
-    display: flex;
-    flex-direction: column;
-    width: 40%;
-
-    height: fit-content;
-}
+@import './components/form.scss';
 
 .contact-row {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
 
     padding: 3rem;
@@ -36,29 +22,6 @@
 .contact-col {
     display: flex;
     flex-direction: column;
-}
-
-.shoe-large-parent {
-    display: block;
-    position: absolute;
-    right: 0;
-    overflow: visible; 
-    z-index: 2;
-}
-
-.shoe-large-img {
-    position: relative;
-    top: -300px;
-    right: 0;
-}
-
-.wwd-icon-large {
-    height: 7rem;
-}
-
-.wwd-icon-compact {
-    height: 5rem;
-    padding: 2rem;
 }
 
 .contact-us-btn:hover {
@@ -71,36 +34,73 @@
     padding: 2rem;
 }
 
-@media (max-width: $breakpoint-tablet) { 
+@media (min-width: $breakpoint-tablet) { 
     .shoe-large-parent {
-        display: none;
+        display: block;
+        position: absolute;
+        right: 0;
+        overflow: visible; 
+        z-index: 2;
     }
 
     .wwd-container {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: space-around;
+        padding: 1rem;
     }
     
     .wwd-column {
         display: flex;
         flex-direction: column;
-        width: 100%;
-        padding-bottom: 2rem;
+        width: 25%;
+
+        height: fit-content;
     }
 
     .contact-row {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: space-around;
     
         padding: 3rem;
     }
+
 }
 
-@media (max-width: $breakpoint-phone) {    
+@media (min-width: $breakpoint-phone) {    
     .contact-col {
         display: flex;
         flex-direction: column;
+    }
+
+    .hero-title {
+        font-size: 4rem;
+        margin-top: 10%;
+    }
+    
+    .hero-subtitle {
+        font-size: 3rem;
+        
+        margin-bottom: 3rem;
+    }
+
+    .hero {
+        min-height: 100vh;
+    }
+
+    .sect-story {
+        text-align: left;
+    }
+    
+    .sect-aboutus {
+        min-height: 75vh;
+    
+        display: flex;
+        text-align: left;
+        align-items: center;
+        
+        justify-content: left;
+        text-align: left;
     }
 }

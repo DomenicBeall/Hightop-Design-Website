@@ -1,0 +1,71 @@
+.angle-top-up {
+  position: relative;
+  z-index: 1; }
+  .angle-top-up:before {
+    background: inherit;
+    content: '';
+    display: block;
+    height: 50%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    -webkit-backface-visibility: hidden; }
+  .angle-top-up:before {
+    top: 0;
+    transform: skewY(-1.5deg);
+    transform-origin: 0 0; }
+
+.angle-top-down {
+  position: relative;
+  z-index: 1; }
+  .angle-top-down:before {
+    background: inherit;
+    content: '';
+    display: block;
+    height: 50%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    -webkit-backface-visibility: hidden; }
+  .angle-top-down:before {
+    top: 0;
+    transform: skewY(1.5deg);
+    transform-origin: 100% 0; }
+
+.angle-bottom-up {
+  position: relative;
+  z-index: 1; }
+  .angle-bottom-up:after {
+    background: inherit;
+    content: '';
+    display: block;
+    height: 50%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    -webkit-backface-visibility: hidden; }
+  .angle-bottom-up:after {
+    bottom: 0;
+    transform: skewY(-1.5deg);
+    transform-origin: 100%; }
+
+.angle-bottom-down {
+  position: relative;
+  z-index: 1; }
+  .angle-bottom-down:after {
+    background: inherit;
+    content: '';
+    display: block;
+    height: 50%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    -webkit-backface-visibility: hidden; }
+  .angle-bottom-down:after {
+    bottom: 0;
+    transform: skewY(1.5deg);
+    transform-origin: 0 100%; }

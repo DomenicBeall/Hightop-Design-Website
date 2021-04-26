@@ -475,3 +475,7 @@ a, a:hover, a:visited, a:active {
   width: 100px;
   height: 100px;
   padding: 1rem; }
+
+.benefit-icon {
+  height: 200px;
+  padding-top: 5rem; }

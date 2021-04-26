@@ -587,3 +587,8 @@ select {
     align-items: center;
     justify-content: left;
     text-align: left; } }
+
+.shadow shoe-large-img {
+  position: relative;
+  top: -300px;
+  right: 0; }

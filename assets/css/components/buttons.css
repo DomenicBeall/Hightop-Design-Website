@@ -30,6 +30,16 @@
   border: #f16520 solid 0.3rem;
   border-radius: 5px; }
 
+.btn-fill-white {
+  background: white;
+  color: #f16520;
+  border: white solid 0.3rem;
+  border-radius: 5px; }
+
+.btn-fill-white:hover {
+  background: #f16520;
+  color: white; }
+
 .btn-fill:hover {
   background: transparent;
   color: #f16520; }

@@ -9,11 +9,12 @@ window.addEventListener('load', function () {
     const email = document.getElementById("email");
     const phone = document.getElementById("phone");
     const projectdetails = document.getElementById("projectdetails");
-    const budget = document.getElementById("budget");
     const deadline = document.getElementById("deadline");
     const source = document.getElementById("source");
 
     quoteButton.addEventListener("click", (event) => {
+        quoteButton.innerText = "Sending...";
+
         const postBody = {
             firstname: firstname.value,
             lastname: lastname.value,
@@ -21,7 +22,6 @@ window.addEventListener('load', function () {
             email: email.value,
             phone: phone.value,
             projectdetails: projectdetails.value,
-            budget: budget.value,
             deadline: deadline.value,
             source: source.value,
         };

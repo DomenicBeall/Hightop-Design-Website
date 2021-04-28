@@ -269,6 +269,16 @@ footer i:hover {
   border: #f16520 solid 0.3rem;
   border-radius: 5px; }
 
+.btn-fill-white {
+  background: white;
+  color: #f16520;
+  border: white solid 0.3rem;
+  border-radius: 5px; }
+
+.btn-fill-white:hover {
+  background: #f16520;
+  color: white; }
+
 .btn-fill:hover {
   background: transparent;
   color: #f16520; }
@@ -325,11 +335,12 @@ footer i:hover {
 
 .dropdown-icon-open {
   transition: all 0.1s linear;
-  width: 10%;
-  height: 10%;
+  width: 50px;
+  height: 50px;
   position: absolute;
   top: 1rem;
-  right: 1rem; }
+  right: 1rem;
+  margin: 1rem; }
 
 .dropdown-icon-open:hover {
   transform: scale(1.2);
@@ -467,10 +478,13 @@ a, a:hover, a:visited, a:active {
 .bg-solid {
   background-color: white; }
 
-.form {
+form {
   min-height: 40vh;
   padding-top: 10vh;
-  padding-bottom: 10vh; }
+  padding-bottom: 10vh;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto; }
 
 .input-row {
   display: flex;
@@ -480,7 +494,8 @@ a, a:hover, a:visited, a:active {
 
 .input-field {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  width: 100%; }
 
 input {
   height: 3rem;
@@ -491,7 +506,6 @@ input {
   font-size: 1.5rem;
   font-family: basic-sans;
   color: white;
-  margin-right: 1rem;
   border-radius: 5px; }
 
 textarea {
@@ -502,7 +516,8 @@ textarea {
   font-size: 1rem;
   font-family: basic-sans;
   color: white;
-  border-radius: 5px; }
+  border-radius: 5px;
+  resize: none; }
 
 label {
   color: white;
@@ -511,7 +526,7 @@ label {
 
 select {
   height: 3rem;
-  width: 50%;
+  width: 100%;
   border: 2px white solid;
   background-color: #f16520;
   padding-left: 1rem;
@@ -519,11 +534,29 @@ select {
   font-size: 2rem;
   font-family: basic-sans;
   color: white;
-  margin-right: 1rem;
   border-radius: 5px; }
 
 ::-webkit-calendar-picker-indicator {
   filter: invert(1); }
+
+#btn-quote-submit {
+  width: 100%;
+  max-width: 20rem;
+  margin-top: 10vh; }
+
+.input-field.right {
+  margin-left: 1rem; }
+
+@media (max-width: 768px) {
+  #btn-quote-submit {
+    max-width: none; }
+  .input-field.right {
+    margin-left: 0rem; }
+  .input-row {
+    flex-direction: column;
+    justify-content: center; }
+  .form {
+    width: 100%; } }
 
 .contact-row {
   display: flex;

@@ -45,6 +45,19 @@
     border-radius: 5px;
 }
 
+.btn-fill-white {
+    background: white;
+    color: $hightop-orange;
+
+    border: white solid 0.3rem;
+    border-radius: 5px;
+}
+
+.btn-fill-white:hover {
+    background: $hightop-orange;
+    color: white;
+}
+
 .btn-fill:hover {
     background: transparent;
     color: $hightop-orange;

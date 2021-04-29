@@ -36,7 +36,6 @@ window.addEventListener('load', function () {
             confirmMessage.innerText = data.message;
 
         });
-    
     });
 
 });

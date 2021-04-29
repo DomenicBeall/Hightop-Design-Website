@@ -205,6 +205,9 @@ footer {
   font-size: 1.25rem;
   padding: 0.25rem; }
 
+.footer-text:hover {
+  text-decoration: underline; }
+
 .footer-heading {
   font-size: 1.75rem;
   font-weight: 700;
@@ -489,7 +492,7 @@ a, a:hover, a:visited, a:active {
   padding-bottom: 6rem; }
 
 .service-icon {
-  width: 100px;
+  width: 150px;
   padding: 2rem; }
 
 .service-item-content {

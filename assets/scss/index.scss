@@ -9,6 +9,8 @@
 @import './components/dropdown.scss';
 @import './components/hero.scss';
 @import './components/section.scss';
+@import './components/shoe.scss';
+@import './components/scroll-arrow.scss';
 
 .wwd-container {
     display: flex;
@@ -38,20 +40,6 @@
     flex-direction: column;
 }
 
-.shoe-large-parent {
-    display: block;
-    position: absolute;
-    right: 0;
-    overflow: visible; 
-    z-index: 2;
-}
-
-.shoe-large-img {
-    position: relative;
-    top: -300px;
-    right: 0;
-}
-
 .wwd-icon-large {
     height: 7rem;
 }
@@ -72,10 +60,6 @@
 }
 
 @media (max-width: $breakpoint-tablet) { 
-    .shoe-large-parent {
-        display: none;
-    }
-
     .wwd-container {
         display: flex;
         flex-direction: column;

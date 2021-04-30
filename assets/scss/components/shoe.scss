@@ -1,0 +1,21 @@
+@import './variables.scss';
+
+.shoe-large-parent {
+    display: block;
+    position: absolute;
+    right: 0;
+    overflow: visible; 
+    z-index: 2;
+}
+
+.shoe-large-img {
+    position: relative;
+    top: -250px;
+    right: 0;
+}
+
+@media (max-width: $breakpoint-tablet) { 
+    .shoe-large-parent {
+        display: none;
+    }
+}

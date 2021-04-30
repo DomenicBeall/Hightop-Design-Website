@@ -13,6 +13,9 @@ window.addEventListener('load', function () {
     const source = document.getElementById("source");
 
     $("#form").submit(function(event) {
+        quoteButton.innerText = "Sending...";
+        quoteButton.disabled = true;
+
         const postBody = {
             firstname: firstname.value,
             lastname: lastname.value,

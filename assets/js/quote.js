@@ -12,33 +12,47 @@ window.addEventListener('load', function () {
     const deadline = document.getElementById("deadline");
     const source = document.getElementById("source");
 
+    $("#btn-quote-submit").on("click", () => {
+        console.log($("#form").valid());
+
+        if ($("#form").valid()) {
+            $("#btn-quote-submit").val("Sending...");
+        }
+    });
+
     $("#form").submit(function(event) {
-        quoteButton.innerText = "Sending...";
-        quoteButton.disabled = true;
+        event.preventDefault();
+        event.returnValue = false;
 
-        const postBody = {
-            firstname: firstname.value,
-            lastname: lastname.value,
-            businessname: businessname.value,
-            email: email.value,
-            phone: phone.value,
-            projectdetails: projectdetails.value,
-            deadline: deadline.value,
-            source: source.value,
-        };
+        if ($("#form").valid()) {
+
+            console.log("Submitting form...");
+            quoteButton.disabled = true;
+
+
+            const postBody = {
+                firstname: firstname.value,
+                lastname: lastname.value,
+                businessname: businessname.value,
+                email: email.value,
+                phone: phone.value,
+                projectdetails: projectdetails.value,
+                deadline: deadline.value,
+                source: source.value,
+            };
+        
+            $.post("https://hightop-email-server.herokuapp.com/sendQuote", postBody, (data) => {
+                
+                console.log("Form response");
+
+                quoteButton.style.display = "none";
     
-        $.post("https://hightop-email-server.herokuapp.com/sendQuote", postBody, (data) => {
-            
-            quoteButton.style.display = "none";
-
-            const confirmMessage = document.getElementById("confirm-message");
-
-            confirmMessage.style.display = "block";
-            confirmMessage.innerText = data.message;
-
-        });
-       
-        return false;
+                const confirmMessage = document.getElementById("confirm-message");
+    
+                confirmMessage.style.display = "block";
+                confirmMessage.innerText = data.message;
+            });
+        }
     });
 });
 

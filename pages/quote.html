@@ -113,45 +113,45 @@
     </div>
 
     <!-- Quote Form -->
-    <section class="form">
+    <form class="form">
         <div class="container">
             <h1 class="subtitle white" style="padding-bottom: 0; margin-bottom: 0; margin-top: 10vh;">Your Details</h1>
             <div class="input-row">
                 <div class="input-field">
                     <label for="firstname">First Name</label>
-                    <input type="text" name="firstname" id="firstname">
+                    <input type="text" name="firstname" id="firstname" required>
                 </div>
                 <div class="input-field right">
                     <label for="firstname">Last Name</label>
-                    <input type="text" name="lastname" id="lastname">
+                    <input type="text" name="lastname" id="lastname" required>
                 </div>
             </div>
             <div class="input-field">
                 <label for="businessname">Business Name</label>
-                <input type="text" name="businessname" id="businessname">
+                <input type="text" name="businessname" id="businessname" required>
             </div>
             <div class="input-row">
                 <div class="input-field">
                     <label for="email">Email</label>
-                    <input type="text" name="email" id="email">
+                    <input type="text" name="email" id="email" required>
                 </div>
                 <div class="input-field right">
                     <label for="phone">Phone Number</label>
-                    <input type="text" name="phone" id="phone">
+                    <input type="text" name="phone" id="phone" required>
                 </div>
             </div>
             <h1 class="subtitle white" style="padding-bottom: 0; margin-bottom: 0; margin-top: 10vh;">Your Project</h1>
             <div class="input-field">
                 <label for="projectdetails">Project Details</label>
-                <textarea name="projectdetails" id="projectdetails" rows="15"></textarea>
+                <textarea name="projectdetails" id="projectdetails" rows="15" required></textarea>
             </div>
             <div class="input-field">
                 <label for="deadline">Deadline</label>
-                <input type="date" name="deadline" id="deadline">
+                <input type="date" name="deadline" id="deadline" required>
             </div>
             <div class="input-field">
                 <label for="source">How did you hear about us?</label>
-                <select name="source" id="source">
+                <select name="source" id="source" required>
                     <option value="Google">Google</option>
                     <option value="Referred by a friend">Referred by a friend</option>
                     <option value="Facebook">Facebook</option>
@@ -161,10 +161,10 @@
                 </select>
             </div>
 
-            <button id="btn-quote-submit" class="btn btn-fill-white">Submit</button>
+            <input id="btn-quote-submit" type="submit" value="Submit" class="btn btn-fill-white">
             <h1 id="confirm-message" class="text-content white" style="margin-top: 10vh; margin-bottom: 10vh;"></h1>
         </div>
-    </section>
+    </form>
 
     <!-- Contact Us -->
     <section class="section bg-solid shadow angle-top-up angle-bottom-down">

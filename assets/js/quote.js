@@ -12,7 +12,9 @@ window.addEventListener('load', function () {
     const deadline = document.getElementById("deadline");
     const source = document.getElementById("source");
 
-    quoteButton.addEventListener("click", (event) => {
+    quoteButton.addEventListener("submit", (event) => {
+        event.preventDefault();
+
         quoteButton.innerText = "Sending...";
 
         const postBody = {
@@ -36,6 +38,7 @@ window.addEventListener('load', function () {
             confirmMessage.innerText = data.message;
 
         });
+    
     });
 
 });

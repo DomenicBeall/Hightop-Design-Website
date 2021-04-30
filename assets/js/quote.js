@@ -12,11 +12,7 @@ window.addEventListener('load', function () {
     const deadline = document.getElementById("deadline");
     const source = document.getElementById("source");
 
-    quoteButton.addEventListener("submit", (event) => {
-        event.preventDefault();
-
-        quoteButton.innerText = "Sending...";
-
+    $("#form").submit(function(event) {
         const postBody = {
             firstname: firstname.value,
             lastname: lastname.value,
@@ -38,8 +34,8 @@ window.addEventListener('load', function () {
             confirmMessage.innerText = data.message;
 
         });
-    
+       
+        return false;
     });
-
 });
 

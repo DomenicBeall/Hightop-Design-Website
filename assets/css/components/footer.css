@@ -9,7 +9,7 @@ footer {
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
-  padding: 4rem; }
+  padding: 2rem; }
 
 .footer-col-img {
   display: flex;
@@ -22,7 +22,7 @@ footer {
   flex-direction: column;
   text-align: center;
   width: 100%;
-  padding-bottom: 4rem; }
+  padding-bottom: 2rem; }
 
 .footer-text {
   color: white;
@@ -52,7 +52,7 @@ footer i:hover {
     align-items: center;
     flex-direction: row;
     justify-content: space-around;
-    padding: 4rem; }
+    padding: 2rem; }
   .footer-col-img {
     display: flex;
     text-align: center;
